@@ -15,7 +15,7 @@ const AppWrap = (Components, idname, className) =>
         "
         >
           <Components />
-          <div className="w-full px-8 py-0  flex-col justify-end items-end hidden md:flex">
+          <div className=" homepageDisables w-full px-8 py-0  flex-col justify-end items-end hidden md:flex">
             <p className="text-xs uppercase text-left text-slate-600 min-[2000px]:text-2xl">
               @2022 Asraful
             </p>

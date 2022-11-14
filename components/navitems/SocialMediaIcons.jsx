@@ -5,7 +5,7 @@ import { AiFillLinkedin, AiFillTwitterCircle } from 'react-icons/ai';
 
 const SocialMediaIcons = () => {
   return (
-    <motion.div className="flex gap-4 justify-end md:justify-center opacity-70 md:opacity-100 items-center flex-col   p-2">
+    <motion.div className=" gap-4 hidden md:flex justify-end md:justify-center opacity-70 md:opacity-100 items-center flex-col   p-2">
       <motion.div
         whileHover={{
           x: [0, 6],

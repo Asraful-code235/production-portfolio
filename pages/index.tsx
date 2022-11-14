@@ -4,6 +4,7 @@ import { HomePage } from './container';
 import { Work } from './container';
 import { Skills } from './container';
 import { Testimonial } from './container';
+import { Contact } from './container';
 import { Footer } from './container';
 
 export default function Home() {
@@ -13,8 +14,9 @@ export default function Home() {
       <About />
       <Work />
       <Skills />
-      <Testimonial />
-      <Footer />
+      {/* <Testimonial /> */}
+      <Contact />
+      {/* <Footer /> */}
     </Layout>
   );
 }
