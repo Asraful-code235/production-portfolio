@@ -8,5 +8,5 @@ module.exports = {
   theme: {
     extend: {},
   },
-  plugins: ['@tailwindcss/typography'],
+  plugins: ['@tailwindcss/typography', 'tailwind-scrollbar'],
 };

@@ -19,3 +19,12 @@ body {
   scroll-behavior: smooth;
   box-sizing: border-box;
 }
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #313bac;
+  border-radius: 6px;
+}

@@ -2,14 +2,13 @@ import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { HiBars3BottomRight, HiXMark } from 'react-icons/hi2';
 import Link from 'next/link';
+import { BsFacebook } from 'react-icons/bs';
+import { AiFillLinkedin, AiFillTwitterCircle } from 'react-icons/ai';
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
   return (
-    <header
-      className="sticky p-5  z-40 backdrop-sepia-0 bg-slate-100/80
-   top-0 "
-    >
+    <header className="sticky p-5  z-40 backdrop-sepia-0 bg-slate-100/80 top-0 ">
       <div className="flex items-center max-w-7xl mx-auto justify-between">
         <motion.div
           initial={{
@@ -63,7 +62,65 @@ const Navbar = () => {
             </li>
           ))}
         </motion.ul>
-        <div className="flex md:invisible hover:bg-slate-200 rounded-full p-2 ">
+        <div className="flex gap-4 items-center justify-between md:invisible rounded-full p-2 ">
+          <motion.div
+            initial={{
+              x: 500,
+              opacity: 0,
+            }}
+            animate={{
+              x: 0,
+              opacity: 1,
+            }}
+            transition={{
+              duration: 1.5,
+            }}
+            className="flex gap-2 items-center justify-center "
+          >
+            <motion.div
+              transition={{ duration: 0.1, ease: 'easeOut' }}
+              className=" my-1 cursor-pointer  hover:bg-white border-none flex items-center justify-center
+      transition-all  rounded-full"
+            >
+              <a
+                href="https://www.facebook.com/asraful.Islam.shoag"
+                target={'_blank'}
+              >
+                <BsFacebook
+                  size={25}
+                  className="text-[#6b7688] hover:text-[#313bac]  border-none "
+                />
+              </a>
+            </motion.div>
+            <motion.div
+              transition={{ duration: 0.1, ease: 'easeOut' }}
+              className=" my-1 hover:bg-white border-none cursor-pointer flex items-center justify-center
+         transition-all  rounded-full"
+            >
+              <a
+                href="linkedin.com/in/asraful-islam-389a40256"
+                target={'_blank'}
+              >
+                <AiFillLinkedin
+                  size={25}
+                  className="text-[#6b7688] hover:text-[#313bac] border-none "
+                />
+              </a>
+            </motion.div>
+            <motion.div
+              transition={{ duration: 0.1, ease: 'easeOut' }}
+              className=" my-1 hover:bg-white border-none  cursor-pointer items-center justify-center
+         transition-all rounf'
+           rounded-full flex"
+            >
+              <a href="https://twitter.com/AsrafulCodes" target={'_blank'}>
+                <AiFillTwitterCircle
+                  size={25}
+                  className="text-[#6b7688] rounded-full hover:text-[#313bac] border-none "
+                />
+              </a>
+            </motion.div>
+          </motion.div>
           <HiBars3BottomRight
             onClick={() => setToggle(true)}
             size={25}

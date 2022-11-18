@@ -18,12 +18,10 @@ const Skills = () => {
 
   return (
     <motion.div className="flex mt-24 flex-col w-full  flex-1 justify-center items-center">
-      <h2 className="text-3xl font-bold text-slate-800">
-        Skills & Experiences
-      </h2>
+      <h2 className="text-3xl font-bold text-slate-800">Skills</h2>
       <motion.div className="flex items-center justify-center mt-24">
         <motion.div className="flex flex-wrap items-center justify-center">
-          {skills.map((skill) => (
+          {skills.map((skill, index) => (
             <motion.div
               whileHover={{
                 scale: [1, 1.05],
@@ -33,6 +31,7 @@ const Skills = () => {
                 duration: 0.2,
                 ease: 'easeInOut',
               }}
+              key={skills + index}
               className="flex flex-col items-center justify-center transition-all m-4"
             >
               <div className="flex items-center justify-center  max-[450px]:w-16 max-[450px]:h-16  w-24 h-24 rounded-full bg-[#fef4f5] min-[2000px]:w-40 min-[2000px]:h-40 min-[2000px]:my-4 min-[2000px]:mx-8">

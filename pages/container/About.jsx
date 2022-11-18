@@ -32,7 +32,7 @@ const About = () => {
               transition={{ duration: 0.5, type: 'tween' }}
               key={item.title + index}
               className="min-[2000px]:w-[370px] min-[2000px]:mx-16 min-[2000px] my-2
-               w-[190px] flex flex-col justify-start items-start
+               w-[190px] h-[350px] flex flex-col justify-start items-start 
               m-4
             
               "
@@ -41,8 +41,8 @@ const About = () => {
                 src={`${urlFor(item.imgUrl)}`}
                 alt={item.title}
                 width={250}
-                height={250}
-                className="object-cover h-[170px] min-[2000px]:h-[350px] rounded-md mb-3 "
+                height={170}
+                className="object-contain  h-[170px]  rounded-md mb-3 "
               />
               <h2 className="font-bold text-xl text-slate-700 mb-2">
                 {item.title}

@@ -14,10 +14,15 @@ const SocialMediaIcons = () => {
         className="h-9 w-9 my-1 cursor-pointer  hover:bg-white border-none flex items-center justify-center
       transition-all  rounded-full"
       >
-        <BsFacebook
-          size={35}
-          className="text-[#6b7688] hover:text-[#313bac]  border-none "
-        />
+        <a
+          href="https://www.facebook.com/asraful.Islam.shoag"
+          target={'_blank'}
+        >
+          <BsFacebook
+            size={35}
+            className="text-[#6b7688] hover:text-[#313bac]  border-none "
+          />
+        </a>
       </motion.div>
       <motion.div
         whileHover={{
@@ -27,10 +32,12 @@ const SocialMediaIcons = () => {
         className="h-9 w-9 my-1 hover:bg-white border-none cursor-pointer flex items-center justify-center
          transition-all  rounded-full"
       >
-        <AiFillLinkedin
-          size={35}
-          className="text-[#6b7688] hover:text-[#313bac] border-none "
-        />
+        <a href="linkedin.com/in/asraful-islam-389a40256" target={'_blank'}>
+          <AiFillLinkedin
+            size={35}
+            className="text-[#6b7688] hover:text-[#313bac] border-none "
+          />
+        </a>
       </motion.div>
       <motion.div
         whileHover={{
@@ -40,10 +47,12 @@ const SocialMediaIcons = () => {
         className="h-9 w-9 my-1 hover:bg-white border-none  cursor-pointer items-center justify-center
          transition-all  rounded-full flex"
       >
-        <AiFillTwitterCircle
-          size={35}
-          className="text-[#6b7688] hover:text-[#313bac] border-none "
-        />
+        <a href="https://twitter.com/AsrafulCodes" target={'_blank'}>
+          <AiFillTwitterCircle
+            size={35}
+            className="text-[#6b7688] hover:text-[#313bac] border-none "
+          />
+        </a>
       </motion.div>
     </motion.div>
   );

@@ -3,7 +3,7 @@ import { AppWrap } from '../wrapper';
 import { motion } from 'framer-motion';
 import BackgroundRipple from '../../components/BackgroundRipple';
 import { Typewriter, useTypewriter } from 'react-simple-typewriter';
-import Image from 'next/image';
+import Resume from '../../components/Resume';
 const HomePage = () => {
   const [text, count] = useTypewriter({
     words: [' Web Developer', 'UI/UX Designer', 'Freelancer'],
@@ -40,6 +40,7 @@ const HomePage = () => {
           👋,I'm Asraful a <span className="text-[#313bac]">{text}</span>
         </span>
       </h1>
+      <Resume />
     </motion.div>
   );
 };
