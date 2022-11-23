@@ -22,12 +22,9 @@ const Resume = () => {
       <a
         href="/Resume.pdf"
         target={'_blank'}
-        className="flex rounded-md items-center justify-center  px-3 py-2 m-1 bg-slate-800 text-white"
+        className="flex rounded-md items-center justify-center  px-6 py-2 m-1 bg-slate-800 text-white"
       >
-        Resume.pdf
-        <span className="mx-2 ">
-          <BsFileEarmarkPdf />
-        </span>
+        CV
       </a>
     </motion.div>
   );
