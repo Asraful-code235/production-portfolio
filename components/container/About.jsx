@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 
-import { AppWrap, MotionWrap } from '../wrapper';
+import { AppWrap, MotionWrap } from '../../components/wrapper';
 import { urlFor, client } from '../../client';
 import Image from 'next/image';
 
@@ -32,7 +32,7 @@ const About = () => {
               transition={{ duration: 0.5, type: 'tween' }}
               key={item.title + index}
               className="min-[2000px]:w-[370px] min-[2000px]:mx-16 min-[2000px] my-2
-               w-[190px] h-[350px] flex flex-col justify-start items-start 
+               w-[190px] h-[350px] flex flex-col justify-start items-start  
               m-4
             
               "
@@ -42,7 +42,7 @@ const About = () => {
                 alt={item.title}
                 width={250}
                 height={170}
-                className="object-contain  h-[170px]  rounded-md mb-3 "
+                className="object-contain  h-[170px]  rounded-md  mb-3 "
               />
               <h2 className="font-bold text-xl text-slate-700 mb-2">
                 {item.title}

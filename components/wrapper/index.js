@@ -1,3 +1,5 @@
+import React from 'react';
+
 import AppWrap from './AppWrap';
 import MotionWrap from './MotionWrap';
 export { AppWrap, MotionWrap };

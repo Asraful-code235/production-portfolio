@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { AppWrap, MotionWrap } from '../wrapper';
+import { AppWrap, MotionWrap } from '../../components/wrapper';
 import { urlFor, client } from '../../client';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
