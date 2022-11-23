@@ -20,7 +20,7 @@ const BackgroundRipple = () => {
     >
       <div className="absolute border border-[#313bac] rounded-full h-[200px] w-[200px] mt-35 animate-ping"></div>
       <div className="absolute border border-slate-300 rounded-full h-[300px] w-[300px] mt-35 "></div>
-      <div className="absolute border opacity-20 animate-pulse border-slate-400 rounded-full h-[400px] w-[400px] mt-35"></div>
+      <div className="absolute border opacity-20 animate-pulse border-indigo-500 rounded-full h-[400px] w-[400px]  mt-35"></div>
     </motion.div>
   );
 };

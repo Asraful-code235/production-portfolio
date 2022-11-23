@@ -33,7 +33,7 @@ const HomePage = () => {
         alt="profile"
         // width={350}
         // height={350}
-        className="rounded-full h-64 w-64 -mt-32 object-cover relative  border border-red-500 "
+        className="rounded-full h-64 w-64 -mt-32 object-cover relative  "
       />
       <h1>
         <span className="text-slate-800 font-semibold text-xl">
