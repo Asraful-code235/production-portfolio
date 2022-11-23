@@ -31,6 +31,7 @@ const HomePage = () => {
         }}
         src={'/edited.png'}
         alt="profile"
+        priority
         // width={350}
         // height={350}
         className="rounded-full h-64 w-64 -mt-32 object-cover relative  "

@@ -10,10 +10,12 @@ const Resume = () => {
       //   transition={{ duration: 0.5, ease: 'easeInOut' }}
       //   className=" grid md:place-items-center  mt-28 md:mt-0 "
       initial={{
-        x: 500,
+        x: 0,
+        opacity: 0,
       }}
       animate={{
         x: 0,
+        opacity: 1,
       }}
       transition={{
         duration: 0.5,
