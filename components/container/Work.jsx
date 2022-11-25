@@ -91,7 +91,11 @@ const Work = () => {
             </div>
             <div className="flex justify-between  items-center ">
               <button className="py-2 bg-slate-700 text-white px-6 rounded-sm">
-                <a href={`${work.projectLink}`} target="_blank">
+                <a
+                  href={`${work.projectLInk}`}
+                  target="_blank"
+                  rel="noopener noreferrer external"
+                >
                   Live
                 </a>
               </button>
