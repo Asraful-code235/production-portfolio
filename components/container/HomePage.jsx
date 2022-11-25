@@ -29,7 +29,7 @@ const HomePage = () => {
         transition={{
           duration: 1.2,
         }}
-        src={'/edited.png'}
+        src={'/pro.png'}
         alt="profile"
         priority={true}
         // width={350}
