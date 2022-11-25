@@ -44,11 +44,11 @@ const Work = () => {
         {['ui/ux', 'nextjs', 'reactjs', 'all'].map((data, index) => (
           <div
             onClick={() => handleWorkFilter(data)}
-            className={`transition-colors py-2 cursor-pointer tracking-wide hover:bg-[#313bac] hover:text-white px-3 text-sm text-slate-700 capitalize rounded-md 
+            className={`transition-colors py-2 cursor-pointer tracking-wide hover:bg-[#313bac]  hover:text-white px-3 text-sm text-slate-700 capitalize rounded-md 
             ${
               activeFilter === data
-                ? 'bg-[#313bac] text-white border'
-                : ' border'
+                ? 'bg-[#313bac] !text-white border'
+                : ' border '
             }
             `}
             key={index}
@@ -72,33 +72,34 @@ const Work = () => {
               ease: 'easeOut',
             }}
             key={index}
-            className="rounded-md "
+            className=" flex flex-col justify-between rounded-md w-[320px] p-4 m-4 h-[400px] min-[2000px]:w-[470px] "
           >
-            <div className="flex flex-col gap-2">
+            <div className="flex flex-col justify-between gap-2 ">
               <Image
                 src={`${urlFor(work.imgUrl)}`}
                 alt={work.title}
                 width={250}
                 height={170}
+                className="w-full h-[230px]"
               />
-              <motion.div>
-                <h4 className="text-lg font-semibold text-slate-700">
+              <motion.div className="">
+                <h4 className="text-lg  font-semibold text-slate-700">
                   {work.title}
                 </h4>
                 <p className="text-sm text-slate-500">{work.description}</p>
-                <div className="flex justify-between items-center my-6">
-                  <button className="py-2 bg-slate-700 text-white px-6 rounded-sm">
-                    <a href={`${work.projectLink}`} target="_blank">
-                      Live
-                    </a>
-                  </button>
-                  <button className="py-2 bg-[#313bac] text-white px-6 rounded-sm">
-                    <a href={`${work.codeLink}`} target="_blank">
-                      Code
-                    </a>
-                  </button>
-                </div>
               </motion.div>
+            </div>
+            <div className="flex justify-between  items-center ">
+              <button className="py-2 bg-slate-700 text-white px-6 rounded-sm">
+                <a href={`${work.projectLink}`} target="_blank">
+                  Live
+                </a>
+              </button>
+              <button className="py-2 bg-[#313bac] text-white px-6 rounded-sm">
+                <a href={`${work.codeLink}`} target="_blank">
+                  Code
+                </a>
+              </button>
             </div>
           </motion.div>
         ))}

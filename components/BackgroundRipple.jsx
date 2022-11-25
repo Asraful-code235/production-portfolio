@@ -11,7 +11,7 @@ const BackgroundRipple = () => {
       animate={{
         scale: [1, 2, 2, 3, 1],
         opacity: [0.1, 0.2, 0.4, 0.8, 0.1, 1.0],
-        borderRadius: ['20%', '20%', '50%', '50%', '80%', '20%'],
+        borderRadius: ['20%', '20%', '50%', '80%', '50%', '20%'],
       }}
       transition={{
         duration: 2.5,
@@ -20,7 +20,8 @@ const BackgroundRipple = () => {
     >
       <div className="absolute border border-[#313bac] rounded-full h-[200px] w-[200px] mt-35 animate-ping"></div>
       <div className="absolute border border-slate-300 rounded-full h-[300px] w-[300px] mt-35 "></div>
-      <div className="absolute border opacity-20 animate-pulse border-indigo-500 rounded-full h-[400px] w-[400px]  mt-35"></div>
+      <div className="absolute  border opacity-20  border-indigo-500 rounded-full h-[400px] w-[400px]  mt-35"></div>
+      <div className="absolute  border  opacity-10 animate-pulse border-indigo-500 rounded-full h-[500px] w-[500px]  mt-35"></div>
     </motion.div>
   );
 };

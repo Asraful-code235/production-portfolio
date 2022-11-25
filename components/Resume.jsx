@@ -22,7 +22,7 @@ const Resume = () => {
       }}
     >
       <a
-        href="/CV.pdf"
+        href="/AsrafulIslamCV.pdf"
         target={'_blank'}
         className="flex rounded-md items-center justify-center  px-6 py-2 m-1 bg-slate-800 text-white"
       >

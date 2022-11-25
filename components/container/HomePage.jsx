@@ -12,7 +12,7 @@ const HomePage = () => {
   });
   return (
     <motion.div
-      className="snap-center min-h-screen  flex flex-col space-x-2 items-center justify-center
+      className="snap-center  min-h-screen  flex flex-col space-x-2 items-center justify-center
     text-center 
     "
     >
@@ -31,14 +31,14 @@ const HomePage = () => {
         }}
         src={'/edited.png'}
         alt="profile"
-        priority
+        priority={true}
         // width={350}
         // height={350}
         className="rounded-full h-64 w-64 -mt-32 object-cover relative  "
       />
       <h1>
         <span className="text-slate-800 font-semibold text-xl">
-          👋,I'm Asraful a <span className="text-[#313bac]">{text}</span>
+          👋,I'm Asraful a <span className="z-20 text-[#313bac]">{text}</span>
         </span>
       </h1>
       <Resume />

@@ -8,18 +8,18 @@ import { AiFillLinkedin, AiFillTwitterCircle } from 'react-icons/ai';
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
   return (
-    <header className="sticky p-5  z-40 backdrop-sepia-0 bg-slate-100/80 top-0 ">
+    <header className="fixed w-full border-red-600 z-50 p-5 backdrop-sepia-0 bg-slate-100/80 top-0 ">
       <div className="flex items-center max-w-7xl mx-auto justify-between">
         <motion.div
           initial={{
-            x: -500,
+            x: -10,
             opacity: 0,
-            scale: 0.5,
+            // scale: 0.5,
           }}
           animate={{
             x: 0,
             opacity: 1,
-            scale: 1,
+            // scale: 1,
           }}
           transition={{
             duration: 0.8,
@@ -124,7 +124,7 @@ const Navbar = () => {
           <HiBars3BottomRight
             onClick={() => setToggle(true)}
             size={25}
-            className="relative flex   cursor-pointer "
+            className="relative flex  cursor-pointer "
           />
           {toggle && (
             <motion.div
