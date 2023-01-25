@@ -29,14 +29,14 @@ const HomePage = () => {
         transition={{
           duration: 1.2,
         }}
-        src={'/pro.png'}
+        src={'/profileImage.png'}
         alt="profile"
         priority={true}
         // width={350}
         // height={350}
-        className="rounded-full h-64 w-64 -mt-32 object-cover relative  "
+        className="rounded-full h-64 w-64 -mt-32 object-contain bg-center relative  "
       />
-      <h1>
+      <h1 className="z-30">
         <span className="text-slate-800 font-semibold text-xl">
           👋,I'm Asraful a <span className="z-20 text-[#313bac]">{text}</span>
         </span>
